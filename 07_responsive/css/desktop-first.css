@@ -1,0 +1,64 @@
+/* Header */
+
+.header {
+  background-color: #ffeeb1;
+  padding-top: 38px;
+  padding-bottom: 235px;
+}
+
+.nav {
+  max-width: 940px;
+  height: 36px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 75px;
+  background-color: #c4c4c4;
+}
+
+.controls {
+  width: 200px;
+  background-color: #c4c4c4;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 240px;
+  background-color: #c4c4c4;
+  margin-top: 160px;
+}
+
+/* ./Header */
+
+/* Partners */
+
+.partners {
+  padding-top: 70px;
+  padding-bottom: 136px;
+}
+
+.title {
+  height: 20px;
+  background-color: #c4c4c4;
+  margin-bottom: 46px;
+}
+
+.card-list {
+  display: flex;
+}
+
+.card {
+  width: 220px;
+  height: 240px;
+  background-color: #c4c4c4;
+  margin: 12px;
+}
+
+/* ./Partners */
