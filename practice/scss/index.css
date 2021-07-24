@@ -20,6 +20,15 @@ button {
   font-family: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+}
+
 .container {
   max-width: 1366px;
   margin: 0 auto;
@@ -108,6 +117,109 @@ button {
   font-size: 16px;
 }
 
+.skills {
+  background-color: #f8f9f9;
+  position: relative;
+}
+
+.skills__stats-container {
+  max-width: 50%;
+  padding-right: 80px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.skills__title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #171717;
+  margin-bottom: 30px;
+}
+
+.skills__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #252525;
+  background-image: url("../images/walling-XLqiL-rz4V8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.stat-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.stat-item__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+
+.stat-item__title {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.stat-item__bar {
+  height: 3px;
+  background-color: #d8d8d8;
+}
+
+.stat-item__line {
+  height: 100%;
+  background-color: #10c9c3;
+}
+
+.info {
+  background-color: #10c9c3;
+}
+
+.info__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  padding: 100px 0;
+}
+
+.info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-item__icon {
+  margin-right: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 40px;
+  height: auto;
+}
+
+.info-item__text {
+  color: #fff;
+  font-weight: 500;
+}
+
+.info-item__count {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info-item__name {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
 @media (max-width: 992px) {
   .nav {
     -webkit-box-orient: vertical;
@@ -137,6 +249,20 @@ button {
   .hero {
     margin-left: 30%;
   }
+  .skills__stats-container {
+    max-width: 100%;
+    padding-right: 0;
+  }
+  .skills__image {
+    position: unset;
+    height: 100vw;
+    width: 100%;
+  }
+  .info__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -148,6 +274,15 @@ button {
 @media (max-width: 576px) {
   .container {
     padding: 0 30px;
+  }
+  .info__grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .info-item {
+    max-width: 220px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
